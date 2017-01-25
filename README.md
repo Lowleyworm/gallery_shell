@@ -30,6 +30,7 @@ Requirements
 
 EDIT:
 * ffmpeg and ffprobe (https://ffmpeg.org/) for converting an extracting information from movies
+
 I also was using Cygwin, so I changed the exif utility to exiv2; it seems to work exactly the same.
 
 On a debian-based system (Ubuntu), just run `apt-get install imagemagick jhead` as root.
