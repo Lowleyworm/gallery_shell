@@ -16,6 +16,10 @@ It offers several features:
 * JPEG header EXIF data extraction
 * Auto-rotation of vertical images
 
+===
+EDIT: I liked the simplicity of the original, but wanted to have all files sorted by date, and to be able to play movies directly.
+===
+
 This combination of features makes a better user experience than pretty much all the big online photo hosts. 
 All you need is a place to host your plain html and jpeg files. This can also be Amazon S3.
 
@@ -23,6 +27,11 @@ Requirements
 ------------
 * ImageMagick (http://www.imagemagick.org/) for the `convert` utility.
 * JHead (http://www.sentex.net/~mwandel/jhead/) for EXIF data extraction
+===
+EDIT:
+* ffmpeg and ffprobe (https://ffmpeg.org/) for converting an extracting information from movies
+I also was using Cygwin, so I changed the exif utility to exiv2; it seems to work exactly the same.
+===
 
 On a debian-based system (Ubuntu), just run `apt-get install imagemagick jhead` as root.
 
@@ -42,6 +51,12 @@ Example: `gallery.sh` or `gallery.sh -t "My Photos" -d "thumbs"`
 
 The directory should contain a bunch of JPEG (.jpg or .JPG) files. It does not work recursively. 
 ZIP files (.zip or .ZIP) and movies (.mov, .MOV, .mp4 or .MP4) are also considered. They appear as a download button in the gallery.
+
+===
+EDIT: I did not include support for ZIP files, but now movies appear as another thumbnail, in the correct date order (assuming the timestamps are correct)
+
+I'm new to github, so I'm not sure how to link this to cyclenerd's original project. If you want to incorporate any of my changes, please do!
+===
 
 Demo
 ----
